@@ -32,12 +32,12 @@ To use this application, follow these steps:
 5. You can track multiple players by entering their usernames in the search bar separated by spaces (e.g. "player1 player2 player3").
 6. The application tracks the following statistics (For all Normal Modes):
 
-- Total games played
-- Total wins
-- Total losses
-- Total final kills
-- Total final deaths
-- Bed destructions
+- Games played
+- Wins
+- Losses
+- Final kills
+- Final deaths
+- Bed Destructions
 - Beds lost
 
 The statistics are updated in real-time as the player's information is retrieved from the Hypixel API. 
@@ -50,4 +50,4 @@ Note: In order to use this application, you must have an API key from the Hypixe
 - Add API Abuse (Mutiple API Keys)
 - Discord Bot Intergration
 - Fix +NaN when adding a new Players Fresh Data
-- Add more checks to make sure UUIDs/API Keys are vaild
+- Add more checks to make sure UUIDs/API Key(s) are vaild
