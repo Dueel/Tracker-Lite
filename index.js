@@ -7,7 +7,7 @@ const readline = require('readline').createInterface({
   output: process.stdout
 });
 
-const appDataPath = process.env.APPDATA || (process.platform === 'darwin' ? process.env.HOME + '/Library/Preferences' : '/var/local');
+const appDataPath = process.env.APPDATA || (process.platform === 'darwin' ? process.env.HOME + '/Library/Preferences' : `${process.env.HOME}/.local/share`);
 const folderPath = path.join(appDataPath, 'TrackerLite');
 const configPath = path.join(folderPath, 'config.json');
 let apiKey = '';
@@ -35,6 +35,7 @@ if (!apiKey) {
     apiKey = input.trim();
     fs.writeFileSync(configPath, JSON.stringify({ apiKey }));
     startTracking();
+    readline.close();
   });
 } else {
   startTracking();

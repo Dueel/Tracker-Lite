@@ -4,7 +4,7 @@ const path = require('path');
 const chalk = require('chalk');
 const axios = require('axios');
 
-const appDataPath = process.env.APPDATA || (process.platform === 'darwin' ? process.env.HOME + '/Library/Preferences' : '/var/local');
+const appDataPath = process.env.APPDATA || (process.platform === 'darwin' ? process.env.HOME + '/Library/Preferences' : `${process.env.HOME}/.local/share`);
 const folderName = 'TrackerLite';
 const folderPath = path.join(appDataPath, folderName);
 if (!fs.existsSync(folderPath)) {
