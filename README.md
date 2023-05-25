@@ -1,7 +1,9 @@
 # Tracker Lite
 
+# THIS WILL NOT BE UPDATED FOR A WHILE
+
 This application is a tool for tracking player statistics for Bedwars on the Hypixel server.
-![Image](http://zip.itsduel.com/u/EwFMzK.png)
+![Image](http://cdn.itsduel.com/u/EwFMzK.png)
 
 ## How to Build
 
